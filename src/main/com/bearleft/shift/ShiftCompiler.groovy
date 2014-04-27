@@ -6,7 +6,11 @@ package com.bearleft.shift
  */
 class ShiftCompiler {
 
+	ShiftCompiler() {
+
+	}
+
 	public static void main(String[] args) {
-		println 3 ^ 3
+		new ShiftCompiler()
 	}
 }

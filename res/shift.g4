@@ -1,4 +1,9 @@
-grammar shift;
+grammar Shift;
+
+@header {
+package com.bearleft.shift.gen;
+}
+
 fragment DecimalLiteral: '0' | [1-9] [0-9]*;
 fragment Exponent: [eE] [+\-]? DecimalLiteral;
 fragment EscapeSequence:
