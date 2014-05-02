@@ -1,4 +1,5 @@
-// Generated from C:/programming/shift/res\Shift.g4 by ANTLR 4.x
+// Generated from R:/programming/shift/res\Shift.g4 by ANTLR 4.x
+package com.bearleft.shift.gen;
 
 package com.bearleft.shift.gen;
 

@@ -1,4 +1,5 @@
-// Generated from C:/programming/shift/res\Shift.g4 by ANTLR 4.x
+// Generated from R:/programming/shift/res\Shift.g4 by ANTLR 4.x
+package com.bearleft.shift.gen;
 
 package com.bearleft.shift.gen;
 
@@ -92,11 +93,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitCompilationUnit(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitCompilationUnit(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final CompilationUnitContext compilationUnit() throws RecognitionException {
@@ -160,11 +156,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitLineTerminator(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitLineTerminator(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final LineTerminatorContext lineTerminator() throws RecognitionException {
@@ -219,11 +210,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitClassDef(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitClassDef(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -299,11 +285,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitClassMember(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitClassMember(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ClassMemberContext classMember() throws RecognitionException {
@@ -366,11 +347,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitMethod(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitMethod(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -437,11 +413,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitConstructor(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitConstructor(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ConstructorContext constructor() throws RecognitionException {
@@ -504,11 +475,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitField(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitField(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final FieldContext field() throws RecognitionException {
@@ -558,11 +524,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitParameterList(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitParameterList(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ParameterListContext parameterList() throws RecognitionException {
@@ -606,11 +567,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitArgumentList(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitArgumentList(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -673,11 +629,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitBlockStatement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitBlockStatement(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -746,11 +697,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitStatement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitStatement(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -837,11 +783,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitDeclarationExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitDeclarationExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class StringExpressionContext extends ExpressionContext {
 		public TerminalNode STRING_LITERAL() { return getToken(ShiftParser.STRING_LITERAL, 0); }
@@ -854,11 +795,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitStringExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitStringExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class VariableExpressionContext extends ExpressionContext {
 		public TerminalNode IDENTIFIER() { return getToken(ShiftParser.IDENTIFIER, 0); }
@@ -870,11 +806,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitVariableExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitVariableExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class FieldAccessContext extends ExpressionContext {
@@ -894,11 +825,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitFieldAccess(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitFieldAccess(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class AssignmentExpressionContext extends ExpressionContext {
 		public ExpressionContext expression(int i) {
@@ -916,11 +842,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitAssignmentExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitAssignmentExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class UnaryExpressionContext extends ExpressionContext {
@@ -940,11 +861,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitUnaryExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitUnaryExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class CallExpressionContext extends ExpressionContext {
 		public ArgumentListContext argumentList() {
@@ -961,11 +877,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitCallExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitCallExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class PowerExpressionContext extends ExpressionContext {
@@ -985,11 +896,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitPowerExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitPowerExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class PostfixExpressionContext extends ExpressionContext {
 		public TerminalNode PLUSPLUS() { return getToken(ShiftParser.PLUSPLUS, 0); }
@@ -1006,11 +912,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitPostfixExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitPostfixExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class FloatExpressionContext extends ExpressionContext {
 		public TerminalNode FLOAT_LITERAL() { return getToken(ShiftParser.FLOAT_LITERAL, 0); }
@@ -1022,11 +923,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitFloatExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitFloatExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class BinaryExpressionContext extends ExpressionContext {
@@ -1053,11 +949,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitBinaryExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitBinaryExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class NullExpressionContext extends ExpressionContext {
 		public TerminalNode NULL() { return getToken(ShiftParser.NULL, 0); }
@@ -1069,11 +960,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitNullExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitNullExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class BooleanExpressionContext extends ExpressionContext {
@@ -1093,11 +979,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitBooleanExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitBooleanExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class MethodCallExpressionContext extends ExpressionContext {
@@ -1120,11 +1001,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitMethodCallExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitMethodCallExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class PrefixExpressionContext extends ExpressionContext {
 		public TerminalNode PLUSPLUS() { return getToken(ShiftParser.PLUSPLUS, 0); }
@@ -1141,11 +1017,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitPrefixExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitPrefixExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class IntExpressionContext extends ExpressionContext {
 		public TerminalNode INTEGER_LITERAL() { return getToken(ShiftParser.INTEGER_LITERAL, 0); }
@@ -1157,11 +1028,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitIntExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitIntExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class ComparisonExpressionContext extends ExpressionContext {
@@ -1187,11 +1053,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitComparisonExpression(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitComparisonExpression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class BitwiseExpressionContext extends ExpressionContext {
 		public ExpressionContext expression(int i) {
@@ -1214,11 +1075,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitBitwiseExpression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitBitwiseExpression(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1614,11 +1470,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitForLoop(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitForLoop(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ForLoopContext forLoop() throws RecognitionException {
@@ -1717,11 +1568,6 @@ public class ShiftParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitWhileLoop(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitWhileLoop(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final WhileLoopContext whileLoop() throws RecognitionException {
@@ -1800,11 +1646,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitIfStatement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitIfStatement(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1916,11 +1757,6 @@ public class ShiftParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ShiftListener ) ((ShiftListener)listener).exitElseStatement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ShiftVisitor ) return ((ShiftVisitor<? extends T>)visitor).visitElseStatement(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 

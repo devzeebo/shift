@@ -20,9 +20,9 @@
 			<version>4.11</version>
 		</dependency>
 		<dependency>
-			<groupId>org.antlr.v4</groupId>
-			<artifactId>runtime</artifactId>
-			<version>4</version>
+			<groupId>org.antlr</groupId>
+			<artifactId>antlr4-runtime</artifactId>
+			<version>4.2.2</version>
 		</dependency>
 	</dependencies>
 
