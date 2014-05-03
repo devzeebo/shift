@@ -1,8 +1,9 @@
 grammar Shift;
 
-@header {
-package com.bearleft.shift.gen;
-}
+//@header {
+//package com.bearleft.shift.gen;
+//}
+// Using IntelliJ Antlr plugin to generate package
 
 fragment DecimalLiteral: '0' | [1-9] [0-9]*;
 fragment Exponent: [eE] [+\-]? DecimalLiteral;
@@ -122,21 +123,21 @@ expression:
 	expression (DOT | QUESTION DOT | STAR DOT) IDENTIFIER '(' argumentList? ')' #methodCallExpression
 |   expression (DOT | QUESTION DOT | STAR DOT) IDENTIFIER #fieldAccess
 |   expression '(' argumentList? ')' #callExpression
+|   LPAREN expression RPAREN #parenthesisExpression
 |   (BANG | TILDE | PLUS | SUB) expression #unaryExpression
 |   (SUBSUB | PLUSPLUS) expression #prefixExpression
 |   expression (SUBSUB | PLUSPLUS) #postfixExpression
-|   expression STARSTAR expression #powerExpression
-|   expression (STAR | SLASH | PERCENT) expression #binaryExpression
-|   expression (PLUS | SUB) expression #binaryExpression
-|   expression (LTLT | GTGT | GTGTGT) expression #binaryExpression
-|   expression (LT | LTE | GT | GTE | EQEQ | BANGEQ | SPACESHIP) expression #comparisonExpression
+|   expression (STAR | SLASH | PERCENT | PLUS | SUB | LTLT | GTGT | GTGTGT | STARSTAR) expression #binaryExpression
+|   expression (LT | LTE | GT | GTE | EQEQ | BANGEQ | SPACESHIP | AMPAMP | BARBAR) expression #comparisonExpression
 |   expression (AMP | BAR | CARET | AMPEQ | BAREQ | CARETEQ) expression #bitwiseExpression
-|   expression (AMPAMP | BARBAR) expression #booleanExpression
 |   expression EQ expression #assignmentExpression
 |   DEF IDENTIFIER EQ expression #declarationExpression
+
 |   STRING_LITERAL #stringExpression
 |   INTEGER_LITERAL #intExpression
 |   FLOAT_LITERAL #floatExpression
+|   TRUE #trueExpression
+|   FALSE #falseExpression
 |   NULL #nullExpression
 |   IDENTIFIER #variableExpression;
 
@@ -155,12 +156,12 @@ whileLoop:
 ifStatement:
 	IF '(' expression ')' NEWLINE* (('{'
 		blockStatement?
-	'}') | statement)
+	'}') | statement) NEWLINE*
 	elseStatement?
 ;
 
 elseStatement:
 	ELSE NEWLINE* (('{'
 		blockStatement?
-	'}') | statement '}')
+	'}') | statement)
 ;

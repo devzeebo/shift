@@ -1,8 +1,5 @@
 // Generated from R:/programming/shift/res\Shift.g4 by ANTLR 4.x
 package com.bearleft.shift.gen;
-
-package com.bearleft.shift.gen;
-
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;

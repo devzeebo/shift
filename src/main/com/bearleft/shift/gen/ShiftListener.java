@@ -1,8 +1,5 @@
 // Generated from R:/programming/shift/res\Shift.g4 by ANTLR 4.x
 package com.bearleft.shift.gen;
-
-package com.bearleft.shift.gen;
-
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -21,6 +18,17 @@ public interface ShiftListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDeclarationExpression(@NotNull ShiftParser.DeclarationExpressionContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link ShiftParser#parenthesisExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterParenthesisExpression(@NotNull ShiftParser.ParenthesisExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ShiftParser#parenthesisExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitParenthesisExpression(@NotNull ShiftParser.ParenthesisExpressionContext ctx);
 
 	/**
 	 * Enter a parse tree produced by {@link ShiftParser#fieldAccess}.
@@ -100,15 +108,15 @@ public interface ShiftListener extends ParseTreeListener {
 	void exitCallExpression(@NotNull ShiftParser.CallExpressionContext ctx);
 
 	/**
-	 * Enter a parse tree produced by {@link ShiftParser#powerExpression}.
+	 * Enter a parse tree produced by {@link ShiftParser#trueExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterPowerExpression(@NotNull ShiftParser.PowerExpressionContext ctx);
+	void enterTrueExpression(@NotNull ShiftParser.TrueExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ShiftParser#powerExpression}.
+	 * Exit a parse tree produced by {@link ShiftParser#trueExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitPowerExpression(@NotNull ShiftParser.PowerExpressionContext ctx);
+	void exitTrueExpression(@NotNull ShiftParser.TrueExpressionContext ctx);
 
 	/**
 	 * Enter a parse tree produced by {@link ShiftParser#parameterList}.
@@ -309,15 +317,15 @@ public interface ShiftListener extends ParseTreeListener {
 	void exitLineTerminator(@NotNull ShiftParser.LineTerminatorContext ctx);
 
 	/**
-	 * Enter a parse tree produced by {@link ShiftParser#booleanExpression}.
+	 * Enter a parse tree produced by {@link ShiftParser#falseExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterBooleanExpression(@NotNull ShiftParser.BooleanExpressionContext ctx);
+	void enterFalseExpression(@NotNull ShiftParser.FalseExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ShiftParser#booleanExpression}.
+	 * Exit a parse tree produced by {@link ShiftParser#falseExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitBooleanExpression(@NotNull ShiftParser.BooleanExpressionContext ctx);
+	void exitFalseExpression(@NotNull ShiftParser.FalseExpressionContext ctx);
 
 	/**
 	 * Enter a parse tree produced by {@link ShiftParser#method}.

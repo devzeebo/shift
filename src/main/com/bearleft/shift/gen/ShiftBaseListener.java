@@ -1,9 +1,6 @@
 // Generated from R:/programming/shift/res\Shift.g4 by ANTLR 4.x
 package com.bearleft.shift.gen;
 
-package com.bearleft.shift.gen;
-
-
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -27,6 +24,19 @@ public class ShiftBaseListener implements ShiftListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDeclarationExpression(@NotNull ShiftParser.DeclarationExpressionContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterParenthesisExpression(@NotNull ShiftParser.ParenthesisExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitParenthesisExpression(@NotNull ShiftParser.ParenthesisExpressionContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
@@ -124,13 +134,13 @@ public class ShiftBaseListener implements ShiftListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPowerExpression(@NotNull ShiftParser.PowerExpressionContext ctx) { }
+	@Override public void enterTrueExpression(@NotNull ShiftParser.TrueExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPowerExpression(@NotNull ShiftParser.PowerExpressionContext ctx) { }
+	@Override public void exitTrueExpression(@NotNull ShiftParser.TrueExpressionContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
@@ -371,13 +381,13 @@ public class ShiftBaseListener implements ShiftListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBooleanExpression(@NotNull ShiftParser.BooleanExpressionContext ctx) { }
+	@Override public void enterFalseExpression(@NotNull ShiftParser.FalseExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBooleanExpression(@NotNull ShiftParser.BooleanExpressionContext ctx) { }
+	@Override public void exitFalseExpression(@NotNull ShiftParser.FalseExpressionContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

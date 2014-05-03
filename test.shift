@@ -1,0 +1,6 @@
+class AClass {
+
+	def member = { a ->
+		a + b / 2 + 3.5 * true + false % null ** 'Test' - "Hello World"
+	}
+}
