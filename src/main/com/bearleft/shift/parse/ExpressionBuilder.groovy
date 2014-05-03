@@ -27,6 +27,28 @@ class ExpressionBuilder {
 				right = new ExpressionBuilder(ctx.expression(1))
 				operator = ShiftParser."${['STAR', 'SLASH', 'PERCENT', 'PLUS', 'SUB', 'LTLT', 'GTGT', 'GTGTGT', 'STARSTAR'].find { ctx."$it"() }}"
 				break
+			case ShiftParser.BitwiseExpressionContext:
+				ctx = (ShiftParser.BitwiseExpressionContext)ctx
+				left = new ExpressionBuilder(ctx.expression(0))
+				right = new ExpressionBuilder(ctx.expression(1))
+				operator = ShiftParser."${['AMP', 'BAR', 'CARET'].find { ctx."$it"() }}"
+				break
+			case ShiftParser.AssignmentExpressionContext:
+			case ShiftParser.DeclarationExpressionContext:
+				left = ctx.expression(0)
+				right = ctx.expression(1)
+				operator = ShiftParser.EQ
+				break
+			case ShiftParser.PrefixExpressionContext:
+				ctx = (ShiftParser.PrefixExpressionContext)ctx
+				right = new ExpressionBuilder((ctx.expression()))
+				operator = ShiftParser."${['PLUSPLUS', 'SUBSUB'].find { ctx."$it"() }}"
+				break
+			case ShiftParser.PostfixExpressionContext:
+				ctx = (ShiftParser.PostfixExpressionContext)ctx
+				left = new ExpressionBuilder((ctx.expression()))
+				operator = ShiftParser."${['PLUSPLUS', 'SUBSUB'].find { ctx."$it"() }}"
+				break
 			case ShiftParser.VariableExpressionContext:
 			case ShiftParser.StringExpressionContext:
 			case ShiftParser.IntExpressionContext:

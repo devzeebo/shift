@@ -1064,15 +1064,12 @@ public class ShiftParser extends Parser {
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public TerminalNode BAREQ() { return getToken(ShiftParser.BAREQ, 0); }
 		public TerminalNode AMP() { return getToken(ShiftParser.AMP, 0); }
 		public TerminalNode BAR() { return getToken(ShiftParser.BAR, 0); }
-		public TerminalNode CARETEQ() { return getToken(ShiftParser.CARETEQ, 0); }
 		public TerminalNode CARET() { return getToken(ShiftParser.CARET, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
-		public TerminalNode AMPEQ() { return getToken(ShiftParser.AMPEQ, 0); }
 		public BitwiseExpressionContext(ExpressionContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
@@ -1266,7 +1263,7 @@ public class ShiftParser extends Parser {
 						if (!(precpred(_ctx, 10))) throw new FailedPredicateException(this, "precpred(_ctx, 10)");
 						setState(144);
 						_la = _input.LA(1);
-						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << AMP) | (1L << BAR) | (1L << CARET) | (1L << AMPEQ) | (1L << BAREQ) | (1L << CARETEQ))) != 0)) ) {
+						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << AMP) | (1L << BAR) | (1L << CARET))) != 0)) ) {
 						_errHandler.recoverInline(this);
 						}
 						consume();
@@ -1879,8 +1876,8 @@ public class ShiftParser extends Parser {
 		"\u00ff\n\20\3\21\3\21\7\21\u0103\n\21\f\21\16\21\u0106\13\21\3\21\3\21"+
 		"\5\21\u010a\n\21\3\21\3\21\5\21\u010e\n\21\3\21\2\3\30\22\2\4\6\b\n\f"+
 		"\16\20\22\24\26\30\32\34\36 \2\b\4\2\n\n\35\35\4\2%&)*\3\2\61\62\5\2$"+
-		"(\63\63?A\5\2-\60<>BC\4\2!#8:\u0137\2&\3\2\2\2\4+\3\2\2\2\6-\3\2\2\2\b"+
-		"<\3\2\2\2\n>\3\2\2\2\fJ\3\2\2\2\16V\3\2\2\2\20\\\3\2\2\2\22_\3\2\2\2\24"+
+		"(\63\63?A\5\2-\60<>BC\3\2!#\u0137\2&\3\2\2\2\4+\3\2\2\2\6-\3\2\2\2\b<"+
+		"\3\2\2\2\n>\3\2\2\2\fJ\3\2\2\2\16V\3\2\2\2\20\\\3\2\2\2\22_\3\2\2\2\24"+
 		"k\3\2\2\2\26s\3\2\2\2\30\u0089\3\2\2\2\32\u00bb\3\2\2\2\34\u00d5\3\2\2"+
 		"\2\36\u00e5\3\2\2\2 \u0100\3\2\2\2\"%\5\6\4\2#%\7\n\2\2$\"\3\2\2\2$#\3"+
 		"\2\2\2%(\3\2\2\2&$\3\2\2\2&\'\3\2\2\2\')\3\2\2\2(&\3\2\2\2)*\7\2\2\3*"+

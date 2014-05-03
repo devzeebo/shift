@@ -129,7 +129,7 @@ expression:
 |   expression (SUBSUB | PLUSPLUS) #postfixExpression
 |   expression (STAR | SLASH | PERCENT | PLUS | SUB | LTLT | GTGT | GTGTGT | STARSTAR) expression #binaryExpression
 |   expression (LT | LTE | GT | GTE | EQEQ | BANGEQ | SPACESHIP | AMPAMP | BARBAR) expression #comparisonExpression
-|   expression (AMP | BAR | CARET | AMPEQ | BAREQ | CARETEQ) expression #bitwiseExpression
+|   expression (AMP | BAR | CARET) expression #bitwiseExpression
 |   expression EQ expression #assignmentExpression
 |   DEF IDENTIFIER EQ expression #declarationExpression
 
